@@ -82,6 +82,7 @@ const SURVEY_LANGUAGE_ALIASES: Record<string, TUserLocale> = {
   es: "es-ES",
   fr: "fr-FR",
   hu: "hu-HU",
+  id: "id-ID",
   ja: "ja-JP",
   nl: "nl-NL",
   pt: "pt-BR",
