@@ -1,5 +1,5 @@
 import { type Locale } from "date-fns";
-import { de, enUS, es, fr, hu, ja, nl, pt, ptBR, ro, ru, sv, tr, zhCN, zhTW } from "date-fns/locale";
+import { de, enUS, es, fr, hu, id, ja, nl, pt, ptBR, ro, ru, sv, tr, zhCN, zhTW } from "date-fns/locale";
 
 const DEFAULT_LOCALE = "en-US";
 
@@ -115,6 +115,7 @@ export const getDateFnsLocale = (localeCode?: string): Locale => {
     es,
     fr,
     hu,
+    id,
     ja,
     nl,
     pt: ptBR, // Bare "pt" is ambiguous; Brazilian is the larger audience and matches the survey packages.

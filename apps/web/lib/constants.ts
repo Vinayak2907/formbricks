@@ -278,6 +278,7 @@ export const AVAILABLE_LOCALES: TUserLocale[] = [
   "es-ES",
   "fr-FR",
   "hu-HU",
+  "id-ID",
   "ja-JP",
   "nl-NL",
   "pt-BR",

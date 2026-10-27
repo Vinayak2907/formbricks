@@ -173,6 +173,7 @@ describe("getDateFnsLocale", () => {
     ["es-ES", "es"],
     ["fr-FR", "fr"],
     ["hu-HU", "hu"],
+    ["id-ID", "id"],
     ["ja-JP", "ja"],
     ["nl-NL", "nl"],
     ["ro-RO", "ro"],

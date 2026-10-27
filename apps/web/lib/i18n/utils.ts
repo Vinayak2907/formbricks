@@ -166,6 +166,13 @@ export const appLanguages = [
     },
   },
   {
+    code: "id-ID",
+    label: {
+      "en-US": "Indonesian",
+      native: "Bahasa Indonesia",
+    },
+  },
+  {
     code: "ja-JP",
     label: {
       "en-US": "Japanese",
