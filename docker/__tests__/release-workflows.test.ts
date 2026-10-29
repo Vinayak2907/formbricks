@@ -19,8 +19,8 @@ const releaseWorkflows = [
 ];
 
 const linearAction = "linear/linear-release-action";
-const linearActionSha = "17b8c24f8ceb2b98cabaf1965ff83c55dd596fac";
-const linearActionVersion = "v0.15.1";
+const linearActionSha = "30f9ae77461ec29f07fffe0c52edd1909bfbb6f5";
+const linearActionVersion = "v0.18.1";
 const releasedVersion = "${{ needs.docker-build-community.outputs.VERSION }}";
 
 type WorkflowStep = {

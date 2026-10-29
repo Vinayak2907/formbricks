@@ -230,6 +230,7 @@ vi.mock("@/lib/constants", async (importOriginal) => {
       "es-ES",
       "fr-FR",
       "hu-HU",
+      "id-ID",
       "ja-JP",
       "nl-NL",
       "pt-BR",

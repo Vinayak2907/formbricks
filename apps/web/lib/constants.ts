@@ -1,6 +1,7 @@
 import "server-only";
 import { TUserLocale } from "@formbricks/types/user";
 import { env } from "./env";
+import { isPlainChatConfigured } from "./plain-chat-config";
 
 export { DEFAULT_BRAND_COLOR } from "./brand-color";
 
@@ -277,6 +278,7 @@ export const AVAILABLE_LOCALES: TUserLocale[] = [
   "es-ES",
   "fr-FR",
   "hu-HU",
+  "id-ID",
   "ja-JP",
   "nl-NL",
   "pt-BR",
@@ -291,7 +293,11 @@ export const AVAILABLE_LOCALES: TUserLocale[] = [
 
 export const PLAIN_APP_ID = env.PLAIN_APP_ID;
 export const PLAIN_ACTIVE_CUSTOMER_LABEL_TYPE_ID = env.PLAIN_ACTIVE_CUSTOMER_LABEL_TYPE_ID;
-export const IS_PLAIN_CHAT_CONFIGURED = Boolean(env.PLAIN_APP_ID);
+// Requires the HMAC secret too: without it Plain cannot verify identity, so the chat stays off.
+export const IS_PLAIN_CHAT_CONFIGURED = isPlainChatConfigured({
+  appId: env.PLAIN_APP_ID,
+  hmacSecret: env.PLAIN_CHAT_HMAC_SECRET,
+});
 
 // Formbricks-in-Formbricks: in-app surveys served by a Formbricks instance
 // (defaults to Formbricks Cloud). The widget only mounts when a workspace id is set.
